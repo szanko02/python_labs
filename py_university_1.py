@@ -38,3 +38,23 @@ keys = ['Protocol:', 'Prefix:', 'AD/Metric:', 'Next-Hop:', 'Last update:', 'Outb
 
 print(keys)
 print(values)
+
+#7
+MAC = 'AAAA:BBBB:CCCC'
+mac = MAC.split(':')
+new_mac = "".join(mac)
+print(bin(int(new_mac, 16)))
+
+#8
+IP = '192.168.3.1'.split('.')
+print (IP[0],'{:>8}'.format(IP[1]),'{:>6}'.format(IP[2]),'{:>8}'.format(IP[3]))
+binIp = [bin( int(IP[0]) )[2:], bin( int(IP[1]) )[2:], bin( int(IP[2]) )[2:], bin( int(IP[3]) )[2:]]
+print (binIp[0].zfill(8), '{:>2}'.format(binIp[1].zfill(8)), '{:>2}'.format(binIp[2].zfill(8)), '{:>2}'.format(binIp[3].zfill(8)))
+
+#9
+num_list = [10, 2, 30, 100, 10, 50, 11, 30, 15, 7]
+word_list = ['python', 'ruby', 'perl', 'ruby', 'perl', 'python', 'ruby', 'perl']
+List = num_list
+element = 15
+print(List)
+print ( List.index(element) )
